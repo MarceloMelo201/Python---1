@@ -82,4 +82,17 @@ frase.upper() == em maiúsculo
 frase.capitalize() == tudo em minúsculo menos a primeira letra (fica em maiúsculo)
 
 frase.title() == 'capitalize' palavra por palavra
+
+frase.strip() == remove espaços inúteis 
+    frase.rstrip() == apenas na direita  
+    frase.lstrip() == apenas na esquerda 
+
+frase.split() == divide em espaços (gera uma lista separando todas as palavras)
+
+'''
+
+
+#Desvios condicionais 
+
+'''
 '''
