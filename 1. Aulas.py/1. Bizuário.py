@@ -122,3 +122,17 @@ variavel = 5
 print("faça algo") if variavel > 10 else print("faça outro algo")
 
 '''
+
+#Cores no Terminal
+
+
+'''
+
+\033[    0:        33:       44:       m 
+        STYLE      TEXT      BACK
+
+STYLE --- 0, 1, 4, 7
+TEXT  --- 30 ATÉ 37 
+BACK  --- 40 ATÉ 47
+
+'''
