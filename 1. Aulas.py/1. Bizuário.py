@@ -65,29 +65,29 @@ frase[5:] == do 5 até o final
 
 '''
 
-len(frase) == diz quantos caracteres tem
+len(frase) == diz quantos caracteres tem.
 
 frase.count('o') == conta quantas vezes existe a letra 'o'
-    frase.count('o',0,13) == conta do 0 ao 13
+    frase.count('o',0,13) == conta do 0 ao 13.
 
 frase.find('deo') == encontra o "deo" e diz em qual local ele começa 
-    se aparecer -1 é porque não foi encontrado
+    se aparecer -1 é porque não foi encontrado.
 
-'curso' in frase == true ou false / se tem a palavra curso dentro de "frase"
+'curso' in frase == true ou false / se tem a palavra curso dentro de "frase".
 
-frase.replace('python', 'Android') == procura a palavra 1 e troca pela 2
+frase.replace('python', 'Android') == procura a palavra 1 e troca pela 2.
 
-frase.upper() == em maiúsculo 
+frase.upper() == em maiúsculo.
 
-frase.capitalize() == tudo em minúsculo menos a primeira letra (fica em maiúsculo)
+frase.capitalize() == tudo em minúsculo menos a primeira letra (fica em maiúsculo).
 
-frase.title() == 'capitalize' palavra por palavra
+frase.title() == 'capitalize' palavra por palavra.
 
-frase.strip() == remove espaços inúteis 
-    frase.rstrip() == apenas na direita  
-    frase.lstrip() == apenas na esquerda 
+frase.strip() == remove espaços inúteis.
+    frase.rstrip() == apenas na direita.
+    frase.lstrip() == apenas na esquerda.
 
-frase.split() == divide em espaços (gera uma lista separando todas as palavras)
+frase.split() == divide em espaços (gera uma lista separando todas as palavras).
 
 '''
 
@@ -95,4 +95,6 @@ frase.split() == divide em espaços (gera uma lista separando todas as palavras)
 #Desvios condicionais 
 
 '''
+
+
 '''
