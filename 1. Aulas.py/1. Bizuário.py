@@ -93,8 +93,32 @@ frase.split() == divide em espaços (gera uma lista separando todas as palavras)
 
 
 #Desvios condicionais 
+#if, else, elif - sintaxe.
 
 '''
 
+> - Maior.
+< - Menor.
+>= - Maior ou igual.
+<= - Menor ou igual.
+== - Igual
+
+if variável > 10:
+    faça algo.
+
+    
+elif variável < 5:
+    faça outro algo.
+
+else:
+    faça outro algo
+
+    
+
+===== CONDIÇÃO SIMPLIFICADA ======
+
+faça algo if variável > 10 else faça outro logo
+variavel = 5
+print("faça algo") if variavel > 10 else print("faça outro algo")
 
 '''
