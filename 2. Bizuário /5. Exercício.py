@@ -4,7 +4,9 @@ informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
 
+from os import system
 
+system("clear")
 
 num = input("Digite um número inteiro: ")
 
@@ -16,5 +18,5 @@ try:
     else:
         print(f"O número {numInt} é impar.")
 
-except:
+except ValueError:
     print("Este valor não é um número inteiro")
