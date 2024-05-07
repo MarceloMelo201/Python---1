@@ -89,3 +89,6 @@ while linha <= qtd_linhas:
 
 
 print('Acabou')
+
+for i in range(3):
+    print("f")
