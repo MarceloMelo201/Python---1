@@ -88,6 +88,8 @@ frase.strip() == remove espaços inúteis.
     frase.lstrip() == apenas na esquerda.
 
 frase.split() == divide em espaços (gera uma lista separando todas as palavras).
+join() == concatena todos os itens da lista usando o espaço
+ (ou qualquer outro caractere que você especificar entre aspas) como separador
 
 '''
 
