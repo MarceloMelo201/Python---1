@@ -51,6 +51,8 @@ while contador_de_acertos > 0:
         tentativas += 1
 
 
+system("clear")
+print("=== VOCÊ GANHOU ===")
 print(f"Palavra: {texto_unificado.upper()}")
 print(f"Tentativas: {tentativas}")
 
