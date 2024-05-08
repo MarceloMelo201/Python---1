@@ -2,13 +2,13 @@
 #se a letra estiver na palavra, exibe, se não, exibe um asterisco
 
 from os import system
-import random
+from random import choice
 
 system("clear")
 
 palavra = ['amor', 'felicidade', 'lindo', 'programador', 'python']
 
-palavra_escolhida = random.choice(palavra) 
+palavra_escolhida = choice(palavra) 
 
 codificador = len(palavra_escolhida) * '*'
 tentativas = 0
