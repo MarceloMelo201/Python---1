@@ -9,7 +9,7 @@ import os
 os.system("clear")
 
 nome = 'Marcelo Melo'
-contador = 0;
+contador = 0
 
 novoNome = ' '
 

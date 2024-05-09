@@ -111,7 +111,6 @@ while escolha != 0:
 
 
 
-
     except ValueError:
         system("clear")
         print("Digite uma opção válida de número. Reiniciando...")
