@@ -1,67 +1,55 @@
-"""
-Calculo do primeiro dígito do CPF
-CPF: 746.824.890-70
-Colete a soma dos 9 primeiros dígitos do CPF
-multiplicando cada um dos valores por uma
-contagem regressiva começando de 10
+from os import system
 
-Ex.:  746.824.890-70 (746824890) 
-   10  9  8  7  6  5  4  3  2
-*  7   4  6  8  2  4  8  9  0
-   70  36 48 56 12 20 32 27 0
 
-Somar todos os resultados: 
-70+36+48+56+12+20+32+27+0 = 301
-Multiplicar o resultado anterior por 10
-301 * 10 = 3010
-Obter o resto da divisão da conta anterior por 11
-3010 % 11 = 7
-Se o resultado anterior for maior que 9:
-    resultado é 0
-contrário disso:
-    resultado é o valor da conta
 
-O primeiro dígito do CPF é 7
+#função para limpar a tela
+def limpar_tela():
+    system("clear")
 
-"""
 
-from os import system 
+def validar_cpf(cpf):
+    cpf_separado = [int(digito) for digito in cpf if digito.isdigit()]
+    if len(cpf_separado) != 9:
+        return "CPF inválido. Deve conter apenas 9 dígitos"
+    
+    multiplicador = 10
+    soma_cpf = 0
+    for i in range(9):
+        soma_cpf += cpf_separado[i] * multiplicador 
+        multiplicador -= 1
 
-system("clear")
+    digito_um = (soma_cpf * 10) % 11
+    if digito_um == 10:
+        digito_um = 0
 
-soma_cpf = 0
+    cpf_separado.append(digito_um)
 
-j = 10
+    multiplicador = 11
+    soma_cpf_dois = 0
+    for i in range(10):
+        soma_cpf_dois += cpf_separado[i] * multiplicador
+        multiplicador -= 1
+
+    digito_dois = (soma_cpf_dois * 10) % 11
+    if digito_dois == 10:
+        digito_dois = 0
+
+    return f"1º Dígito: {digito_um}\n2º Dígito: {digito_dois}" 
+
+    
+
 
 
 while True:
+    limpar_tela()
+    print("=== VALIDAÇÃO DE CPF === ")
+    cpf = input("Digite o seu CPF para validação (somente números): ")
+    resultado = validar_cpf(cpf)
+    print(resultado)
+    input("Pressione Enter para continuar...")
 
-    cpf = input("Digite o seu cpf para validação: ")
-
-    cpf_separado = [int(digito) for digito in str(cpf)]
     
-    if len(cpf_separado) > 9:
-       print('Digite uma opção válida.')
-
-    
-    for i in range(9): 
-        soma_cpf += cpf_separado[i] * j
-        j -= 1
-
-    multi_cpf = soma_cpf * 10
-    resto = multi_cpf % 11
         
-    if resto > 9:
-        resultado = 0
-        print(f"Primeiro dígito: {resultado}")
-
-    else:
-         resultado = resto
-         print(f"Primeiro dígito: {resultado}")
-
-    
-    
-    
 
 
 
