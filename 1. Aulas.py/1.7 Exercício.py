@@ -1,10 +1,10 @@
 from os import system 
 
-
+system("clear")
 while True:
     
     try:
-        system("clear")
+        
         nome = input("Digite o nome do produto: ")
         quantidade_adiquirida = int(input("Digite a quantidade adiquirida: "))
         preço_unidade = float(input("Preço por unidade: "))
@@ -28,5 +28,6 @@ while True:
         print(f"Total a pagar: {total_a_pagar}")
         continuar = input("Pressione enter para continuar...")
 
-    except ValueError:
+    except:
+        system("clear")
         print("Digite um valor válido.")
