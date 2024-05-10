@@ -12,3 +12,5 @@ print(f"Nome: {nome}")
 print(f"Sexo: {sexo}")
 print(f"Estado Civil: {estado_civil}")
 print(f"Tempo de casada: {tempo}")
+
+
