@@ -35,6 +35,11 @@ where id = 1
 
 valor = nome, cpf, email, id...
 
+#Exclusão de Dados
 
+DELETE FROM CLIENTES WHERE VALOR = 1
+
+valor = id, nome, cpf, email...
 
 '''
+
