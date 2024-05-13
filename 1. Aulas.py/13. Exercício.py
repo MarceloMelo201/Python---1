@@ -1,9 +1,11 @@
 from os import system
 from time import sleep
 
+soma = 0
+
 for i in range(3):
     while True:
-        nota = float(input("Digite a {i+1}ª nota: "))
+        nota = float(input(f"Digite a {i+1}ª nota: "))
 
         if nota < 0 or nota > 10:
             print("Digite uma nota válida...")
@@ -15,12 +17,12 @@ for i in range(3):
 
 media = soma / 3
 
-print(f"Média: {media}")
+print(f"Média: {media:.2f}")
 
-if media >=7:
+if media >= 7:
     print("Aprovado")
 
-if media <7 and media >= 5:
+elif media >=5 and media < 7:
     print("Recuperação")
 
 else:
