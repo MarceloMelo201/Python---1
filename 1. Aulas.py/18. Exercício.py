@@ -20,3 +20,5 @@ for i in range(len(valor)):
 
 print(f"Quantidade de pares: {pares}")
 print(f"Quantidade de impares: {impares}")
+
+opcao = input("Deseja adicionar outro prato? (s/n)")
