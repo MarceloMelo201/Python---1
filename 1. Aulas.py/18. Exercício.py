@@ -1,7 +1,6 @@
 from os import system
 
 valor = []
-
 pares = 0
 impares = 0
 
