@@ -1,7 +1,6 @@
 from os import system
 
 
-
 #função para limpar a tela
 def limpar_tela():
     system("clear")
@@ -37,9 +36,6 @@ def validar_cpf(cpf):
     return f"1º Dígito: {digito_um}\n2º Dígito: {digito_dois}" 
 
     
-
-
-
 while True:
     limpar_tela()
     print("=== VALIDAÇÃO DE CPF === ")

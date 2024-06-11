@@ -6,6 +6,7 @@ inserir, apagar e listar valores da sua lista
 Não permita que o programa quebre com
 erros de índices inexistentes na lista.
 
+
 '''
 
 from os import system 
