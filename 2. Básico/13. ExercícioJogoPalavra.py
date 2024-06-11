@@ -27,7 +27,7 @@ while contador_de_acertos > 0:
         tentativas += 1
         continue 
 
-    if letra_escolhida in palavra_escolhida and letra_escolhida not in texto_unificado: 
+    if letra_escolhida in palavra_escolhida: 
         #se a letra digitada estiver na palavra escolhida
 
         posicao = palavra_escolhida.find(letra_escolhida) #posição onde a letra está
